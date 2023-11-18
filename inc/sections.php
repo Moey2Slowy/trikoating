@@ -58,8 +58,9 @@
 					        	<div class="feature-imagery">
 									<div class="feature-arrow">
 						        		<div class="feature-arrow-block"></div><svg class="feature-arrow-triangle" viewBox="0 0 220 256" width="220" height="256" preserveAspectRatio="xMidYMid meet"><path class="st0" d="M218.16,109.9c0,0-160.1-103.78-163.99-106.31S44.65,0,39.55,0H0v256c12.04,0,22.71-4.2,30.79-9.12l0,0l0,0 c2.97-1.8,187.44-130.24,187.44-130.24C220.62,115.01,220.58,111.47,218.16,109.9z"/></svg>
-							        </div>
-						        	<?php if($icon): ?><img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt'] ?>" /><?php endif; ?>
+								        <?php if($icon): ?><img class="feature-icon" src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt'] ?>" /><?php endif; ?>
+								    </div>
+						        	
 						        	<div class="feature-row-image">
 							        	<?php if($image): ?>
 							        		<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />

@@ -1256,32 +1256,51 @@ a:hover {
 }
 
 .large-buttons a.button {
-  font-size: 1.75em;
+  font-size: 1.5em;
 }
 
 .small-buttons a.button {
-  font-size: 1.15em;
+  font-size: 1em;
 }
 
 a.button {
+  position: relative;
   overflow: hidden;
   display: inline-block;
-  padding: 5px 40px 10px;
+  padding: 12px 40px;
   margin: 0 0 0 12px;
-  border: 1px solid #000000;
   border-radius: 0;
-  background: #d7282f;
-  box-shadow: 0 5px 0 #606060;
-  font-size: 1.45em;
+  font-size: 1.25em;
   font-weight: 700;
   color: #ffffff;
-  text-transform: uppercase;
   line-height: 1em;
 }
 
 a.button:hover {
   background: transparent;
   color: #d7282f;
+}
+
+a.button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 300%;
+  background: #d7282f;
+  background: linear-gradient(0deg, #003b4d 33%, #d7282f 67%);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+}
+
+a.button:hover:after {
+  transform: translate3d(0, -66%, 0);
 }
 
 .buttons-wrapper.absolute-buttons {
@@ -1301,32 +1320,19 @@ a.button:hover {
   margin: 3px 0 3px 12px;
 }
 
-.bg-primary a.button:hover {
-  border-color: #ffffff;
+.bg-primary a.button:after {
   background: #d7282f;
-  color: #ffffff;
+  background: linear-gradient(0deg, #ffffff 33%, #003b4d 67%);
 }
 
-.bg-black a.button {
-  border-color: #003b4d;
-  background: #003b4d;
-  color: #ffffff;
+.bg-secondary a.button:after {
+  background: #d7282f;
+  background: linear-gradient(0deg, #ffffff 33%, #d7282f 67%);
 }
 
-.bg-black a.button:hover {
-  background: #000000;
-  color: #003b4d;
-}
-
-.bg-secondary a.button {
-  border-color: #ffffff;
-  background: #ffffff;
-  color: #003b4d;
-}
-
-.bg-secondary a.button:hover {
-  background: #003b4d;
-  color: #ffffff;
+.bg-black a.button:after {
+  background: #d7282f;
+  background: linear-gradient(0deg, #ffffff 33%, #d7282f 67%);
 }
 
 /* --------------------------------------------------------------------------------------- */
@@ -3461,7 +3467,7 @@ section:not(#hero) .title-banner-content h2 {
   display: block;
   transform: translate3d(0, -50%, 0);
   color: #ffffff;
-  font-size: 2.5em;
+  font-size: 2.25em;
   line-height: 1em;
   text-transform: uppercase;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
@@ -3671,6 +3677,10 @@ section:not(#hero) .title-banner-content h2 {
   border-left: none;
 }
 
+.section-feature-rows .feature-icon {
+  display: none;
+}
+
 @media screen and (min-width: 640px) {
   .feature-title-column,
   .feature-text-column {
@@ -3684,6 +3694,34 @@ section:not(#hero) .title-banner-content h2 {
 
   .feature-row-image {
     width: calc(100% - 120px);
+  }
+
+  .section-feature-rows .feature-icon {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    display: block;
+    width: 48px;
+    height: 48px;
+    transform: translate3d(0, -70%, 0);
+  }
+
+  .section-feature-rows .feature-row:nth-child(odd) .feature-icon {
+    right: 58px;
+  }
+
+  .section-feature-rows .feature-row:nth-child(even) .feature-icon {
+    left: 58px;
+  }
+
+  .section-feature-rows.feature-start-left .feature-row:nth-child(odd) .feature-icon {
+    right: initial;
+    left: 58px;
+  }
+
+  .section-feature-rows.feature-start-left .feature-row:nth-child(even) .feature-icon {
+    left: initial;
+    right: 58px;
   }
 }
 @media screen and (min-width: 1080px) {
@@ -3744,6 +3782,29 @@ section:not(#hero) .title-banner-content h2 {
 
   .feature-arrow {
     width: calc(100% + 60px);
+  }
+
+  .section-feature-rows .feature-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .section-feature-rows .feature-row:nth-child(odd) .feature-icon {
+    right: 80px;
+  }
+
+  .section-feature-rows .feature-row:nth-child(even) .feature-icon {
+    left: 80px;
+  }
+
+  .section-feature-rows.feature-start-left .feature-row:nth-child(odd) .feature-icon {
+    right: initial;
+    left: 80px;
+  }
+
+  .section-feature-rows.feature-start-left .feature-row:nth-child(even) .feature-icon {
+    left: initial;
+    right: 80px;
   }
 }
 /* -------------------------------------------------------------------- */
@@ -4039,18 +4100,52 @@ section:not(#hero) .title-banner-content h2 {
   filter: grayscale(1);
 }
 
-#thank-you .wrapper {
-  z-index: 2;
-}
-
 #thank-you h1 {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 50%;
+  z-index: 2;
   display: block;
-  transform: translate3d(0, -50%, 0);
-  text-align: center;
+  padding: 0;
+  margin: 0;
+  transform: translate3d(-50%, -50%, 0);
   color: #ffffff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* Thank You ---------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+#page-not-found {
+  min-height: 320px;
+  height: 50vw;
+  max-height: 640px;
+}
+
+#page-not-found img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-position: center center;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+
+#page-not-found h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  padding: 0;
+  margin: 0;
+  transform: translate3d(-50%, -50%, 0);
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
 }
 
 /* -------------------------------------------------------------------------------------------- */

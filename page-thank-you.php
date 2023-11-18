@@ -11,9 +11,7 @@ get_header(); ?>
 		<img src="<?php bloginfo('url'); ?>/wp-content/themes/trikoating/images/powder-coating-1.webp" alt="<?php the_title(); ?>" />
 	<?php } ?>
 	
-	<div class="wrapper center-align">
-		<h1>Thank You</h1>
-	</div>
+	<h1>Thank You</h1>
 </section>
 
 

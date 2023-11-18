@@ -19,8 +19,6 @@
 	<meta name="msapplication-navbutton-color" content="#d7282f">
 	<meta name="apple-mobile-web-app-capable" content="no">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-	<?php get_template_part('inc/rich-snippets'); ?>
 </head>
 
 
