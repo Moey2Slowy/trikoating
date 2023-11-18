@@ -3120,7 +3120,7 @@ li.menu-item-has-children ul a:after {
   display: block;
   width: 100%;
   min-height: 256px;
-  height: 30vw;
+  height: 33.3333vw;
   max-height: 512px;
   text-align: center;
 }
@@ -3350,6 +3350,10 @@ section:not(#hero) .title-banner-content h2 {
 /* -------------------------------------------------------------------- */
 /* Text and Image columns -------------------------- */
 /* -------------------------------------------------------------------- */
+.section-text-image {
+  overflow: hidden;
+}
+
 .text-image-column {
   display: block;
 }
@@ -3435,6 +3439,10 @@ section:not(#hero) .title-banner-content h2 {
 /* -------------------------------------------------------------------- */
 /* Feature Rows -------------------------- */
 /* -------------------------------------------------------------------- */
+.section-feature-rows {
+  overflow: hidden;
+}
+
 .feature-rows {
   margin: 0;
   padding: 0;
@@ -4019,15 +4027,17 @@ section:not(#hero) .title-banner-content h2 {
   }
 
   .form-section-triangle.triangle-blue {
-    left: 32%;
+    left: 70%;
+    z-index: 3;
   }
 
   .form-section-triangle.triangle-red {
-    left: 128%;
+    left: 150%;
+    z-index: 2;
   }
 
   .form-section-triangle.triangle-white {
-    left: 64%;
+    left: 110%;
     z-index: 1;
   }
 }

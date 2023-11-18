@@ -21,7 +21,7 @@
 	display: block;
 	width: 100%;
 	min-height: 256px;
-	height: 30vw;
+	height: 33.3333vw;
 	max-height: 512px;
 	text-align: center;
 }
@@ -208,6 +208,7 @@ section:not(#hero) .title-banner-content h2 {
 /* -------------------------------------------------------------------- */
 /* Text and Image columns -------------------------- */
 /* -------------------------------------------------------------------- */
+.section-text-image {overflow: hidden;}
 .text-image-column {display: block;}
 .text-image-column.image-column {
 	left: -5vw; 
@@ -261,6 +262,7 @@ section:not(#hero) .title-banner-content h2 {
 /* -------------------------------------------------------------------- */
 /* Feature Rows -------------------------- */
 /* -------------------------------------------------------------------- */
+.section-feature-rows {overflow: hidden;}
 .feature-rows {margin: 0; padding: 0;}
 .feature-row {
 	position: relative;
@@ -605,9 +607,9 @@ section:not(#hero) .title-banner-content h2 {
 	.contact-form-column {width: 60%; max-width: 720px;}
 
 	.form-section-triangle {width: 350px; height: 500px;}
-	.form-section-triangle.triangle-blue {left: 32%;}
-	.form-section-triangle.triangle-red {left: 128%;}
-	.form-section-triangle.triangle-white {left: 64%; z-index: 1;}
+	.form-section-triangle.triangle-blue {left: 70%; z-index: 3;}
+	.form-section-triangle.triangle-red {left: 150%; z-index: 2;}
+	.form-section-triangle.triangle-white {left: 110%; z-index: 1;}
 
 }
 
