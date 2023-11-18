@@ -1,0 +1,45 @@
+.projects-container {
+
+}
+.project-listing {padding: 48px 0 0;}
+.project-listing:first-child {padding-top: 0;}
+.project-listing h2 {
+    margin-bottom: 16px;
+    font-size: 2em;
+}
+
+.gallery-slider {
+    position: relative; 
+    overflow-x: scroll; 
+    display: block; 
+    padding: 0 16px 16px;
+}
+.gallery-slider::-webkit-scrollbar {width: 1em;}
+.gallery-slider::-webkit-scrollbar-track {background-color: transparent;}
+.gallery-slider::-webkit-scrollbar-thumb {
+    background-color: $primary;
+    border-radius: 8px;
+    border: 4px solid $white;
+}
+.gallery-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.gallery-nowrap {
+    white-space: nowrap;
+    height: 20vw;
+    max-height: 256px;
+}
+.gallery-slider a {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: auto;
+}
+.gallery-slider a img {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: auto;
+}

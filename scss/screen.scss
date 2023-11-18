@@ -1,0 +1,33 @@
+// Colours
+$primary: #d7282f;
+$primaryhover: #8e1725;
+$secondary: #003b4d;
+$secondaryhover: #0a657a;
+$black: #000000;
+$grey: #606060;
+$light: #f2f2f2;
+$white: #ffffff;
+
+$warning: #d7282f;
+$caution: #ede840;
+$success: #86c63c;
+
+$desktopHeader: 88.4px;
+$mobileHeader: 55.5px;
+
+// Fonts
+$bodyfont: "nimbus", "helvetica", "arial", sans-serif;
+$smallfont: 0.85em;
+$xsmallfont: 0.7em;
+$lineheight: 1.5em;
+
+@import "compass/css3";
+@import 'reset';
+@import 'global';
+@import 'forms';
+@import 'logos';
+@import 'header';
+@import 'projects';
+@import 'sections';
+@import 'footer';
+@import 'print';

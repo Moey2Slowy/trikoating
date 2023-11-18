@@ -1,0 +1,57 @@
+/* -------------------------------------------------------------------- */
+/* TSM Logo -------------------------- */
+/* -------------------------------------------------------------------- */
+.tsm-logo .tsm-logo-color-one {fill: $black;}
+.tsm-logo .tsm-logo-color-two {fill: $primary;}
+.header-on-black .tsm-logo-color-one {fill: $white;}
+
+.tsm-logo .tsm-logo-color-one,
+.tsm-logo .tsm-logo-color-two {
+	-webkit-transition: fill 0.5s ease;
+	-moz-transition: fill 0.5s ease;
+	-o-transition: fill 0.5s ease;
+	transition: fill 0.5s ease;
+}
+
+
+/* -------------------------------------------------------------------- */
+/* TSM Badge -------------------------- */
+/* -------------------------------------------------------------------- */
+svg.tsm-badge {overflow: initial;}
+.tsm-badge .badge-uprights {
+	fill: $primary;
+	-webkit-transition: fill 1s ease 0s;
+	-moz-transition: fill 1s ease 0s;
+	-o-transition: fill 1s ease 0s;
+	transition: fill 1s ease 0s;
+}
+.tsm-badge.badge-leave .badge-uprights {
+	fill: $white;
+	-webkit-transition: fill 0.1s ease 0.05s;
+	-moz-transition: fill 0.1s ease 0.05s;
+	-o-transition: fill 0.1s ease 0.05s;
+	transition: fill 0.1s ease 0.05s;
+}
+.tsm-badge .bolt-container {
+	-webkit-transition: transform 0.05s ease 0s;
+	-moz-transition: transform 0.05s ease 0s;
+	-o-transition: transform 0.05s ease 0s;
+	transition: transform 0.05s ease 0s;
+}
+.tsm-badge:hover .bolt-container {
+	transform: translate3d(4px,-20px,0);
+	-webkit-transition: transform 1s ease 0s;
+	-moz-transition: transform 1s ease 0s;
+	-o-transition: transform 1s ease 0s;
+	transition: transform 1s ease 0s;
+}
+.tsm-badge .badge-bolt {fill: $black;}
+.bg-black .tsm-badge .badge-bolt {fill: $white;}
+.tsm-badge:hover .badge-bolt {animation: boltshake .125s infinite forwards ease-in;}
+@keyframes boltshake {
+	0% {transform: translateX(0);}
+	25% {transform: translateX(-1px);}
+	50% {transform: translateX(0);}
+	75% {transform: translateX(1px);}
+	100% {transform: translateX(0);}
+}

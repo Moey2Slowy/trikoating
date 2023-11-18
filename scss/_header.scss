@@ -1,0 +1,556 @@
+/* --------------------------------------------------------------------------------------- */
+/* HEADER ---------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    background: $white;
+    box-shadow: 0 0 8px rgba($secondary,0.25);
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+#header-spacer {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: transparent;
+}
+.mobile-site #header-spacer {height: $mobileHeader;}
+.desktop-site #header-spacer {height: $desktopHeader;}
+
+
+/* --------------------------------------------------------------------------------------- */
+/* HEADER LOGO ---------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+header .header-logo-link {
+    position: relative;
+    display: block;
+    padding: 16px;
+    margin: 0 auto;
+    width: 288px;
+}
+.mobile-site header .header-logo-link,
+.scrolled-page header .header-logo-link {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 212px;
+}
+header .logo {
+    position: relative;
+    overflow: visible;
+    display: block;
+    width: 256px;
+    height: 56.4167px;
+}
+.mobile-site header .logo,
+.scrolled-page header .logo {
+    width: 180px;
+    height: 39.6667px;
+}
+
+.logo .logo-primary {fill: $primary;}
+.logo .logo-secondary {fill: $secondary;}
+
+.logo-t {position: relative; z-index: 3;}
+.logo-ri {position: relative; z-index: 2;}
+.logo-k {position: relative; z-index: 4;}
+.logo-oating {position: relative; z-index: 1;}
+header .header-logo-link .logo-oating path {
+    fill: $secondary;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+header .header-logo-link:hover .logo-oating path {fill: $primary; transform: translate3d(6px,0,0);}
+header .header-logo-link:hover .logo-oating path:nth-child(1) {
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+header .header-logo-link:hover .logo-oating path:nth-child(2) {
+    -webkit-transition: all 0.25s ease 0.1s;
+    -moz-transition: all 0.25s ease 0.1s;
+    -o-transition: all 0.25s ease 0.1s;
+    transition: all 0.25s ease 0.1s;
+}
+header .header-logo-link:hover .logo-oating path:nth-child(3) {
+    -webkit-transition: all 0.25s ease 0.2s;
+    -moz-transition: all 0.25s ease 0.2s;
+    -o-transition: all 0.25s ease 0.2s;
+    transition: all 0.25s ease 0.2s;
+}
+header .header-logo-link:hover .logo-oating path:nth-child(4) {
+    -webkit-transition: all 0.25s ease 0.3s;
+    -moz-transition: all 0.25s ease 0.3s;
+    -o-transition: all 0.25s ease 0.3s;
+    transition: all 0.25s ease 0.3s;
+}
+header .header-logo-link:hover .logo-oating path:nth-child(5) {
+    -webkit-transition: all 0.25s ease 0.4s;
+    -moz-transition: all 0.25s ease 0.4s;
+    -o-transition: all 0.25s ease 0.4s;
+    transition: all 0.25s ease 0.4s;
+}
+header .header-logo-link:hover .logo-oating path:nth-child(6) {
+    -webkit-transition: all 0.25s ease 0.5s;
+    -moz-transition: all 0.25s ease 0.5s;
+    -o-transition: all 0.25s ease 0.5s;
+    transition: all 0.25s ease 0.5s;
+}
+
+
+/* --------------------------------------------------------------------------------------- */
+/* HEADER NAV ---------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+header nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 0.25s ease;
+    -moz-transition: opacity 0.25s ease;
+    -o-transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease;
+}
+header ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+}
+header ul li {
+    position: relative;
+    display: inline-block; 
+    height: 100%;
+}
+header ul li a,
+.mobile-nav-buttons a {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1em;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+header ul li a {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 16px; 
+    color: $primary;
+}
+header ul li:hover > a {color: $white;}
+header ul li a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 300%;
+    background: $white;
+    background: linear-gradient(0deg, rgba($primary,1) 33%, rgba($white,1) 67%);
+    transform: translate3d(0,0,0);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+header ul li:hover a:after,
+header ul li:hover > a:after {transform: translate3d(0,-66%,0);}
+
+
+
+
+
+/* Mobile Nav buttons ---------------------------------------------- */
+.mobile-nav {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1100;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: 50px;
+}
+.mobile-nav-buttons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: calc(100% - 80px);
+    height: 100%;
+}
+.mobile-nav-buttons a {
+    flex-grow: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: $white;
+}
+.mobile-nav-buttons a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 300%;
+    background: $primary;
+    background: linear-gradient(0deg, rgba($secondary,1) 33%, rgba($primary,1) 67%);
+    transform: translate3d(0,0,0);
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
+.mobile-nav-buttons a:hover:after {transform: translate3d(0,-66%,0);}
+
+
+/* hamburger ------------------------------------------------- */
+.hamburger {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 100%;
+    background: $secondary;
+    cursor: pointer;
+}
+.hamburger div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 30px;
+    height: 4px;
+    background: $white;
+    -webkit-transition: transform 0.25s ease;
+    -moz-transition: transform 0.25s ease;
+    -o-transition: transform 0.25s ease;
+    transition: transform 0.25s ease;
+}
+.hamburger div.bun-top {transform: translate3d(-50%,-12px,0) rotate(0deg) scaleX(1); transform-origin: 100% 50%;}
+.hamburger:hover div.bun-top {transform: translate3d(-70%,-1px,0) rotate(45deg) scaleX(.75);}
+
+.hamburger div.meat {transform: translate3d(-50%,-2px,0) scaleX(1); transform-origin: 75% 50%;}
+.hamburger:hover div.meat {transform: translate3d(-50%,-2px,0) scaleX(0);}
+
+.hamburger div.bun-bottom {transform: translate3d(-50%,8px,0) rotate(0deg) scale(1); transform-origin: 100% 50%;}
+.hamburger:hover div.bun-bottom {transform: translate3d(-70%,-3px,0) rotate(-45deg) scaleX(.75);}
+
+
+/* Dropdowns ---------------------------------------------- */
+nav ul li:hover ul li a {padding: 12px 8px;}
+
+nav ul li ul {
+    position: absolute;
+    left: 50%;
+    z-index: 15;
+    display: block;
+    width: 250px;
+    height: auto;
+    padding: 4px 0 0;
+    margin: 0;
+    transform: translate3d(-50%,20px,0);
+    opacity: 0;
+    text-align: left;
+     pointer-events: none;
+    -webkit-transition: all 0.375s ease;
+    -moz-transition: all 0.375s ease;
+    -o-transition: all 0.375s ease;
+    transition: all 0.375s ease;
+}
+nav ul li:hover > ul {
+    transform: translate3d(-50%,0,0); 
+    opacity: 1; 
+    pointer-events: auto;
+}
+nav ul li ul:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 12px;
+    height: 8px;
+    clip-path: polygon(0% 0%, 100% 0, 50% 100%);
+    transform: translate3d(-50%,-60px,0);
+    background: $white;
+    pointer-events: none;
+    -webkit-transition: all 0.375s ease;
+    -moz-transition: all 0.375s ease;
+    -o-transition: all 0.375s ease;
+    transition: all 0.375s ease;
+}
+nav ul li:hover ul:before {transform: translate3d(-50%,-24px,0);}
+    nav ul li ul li {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 0 4px;
+        padding: 0;
+    }
+        nav ul li ul li a {
+            position: relative;
+            overflow: hidden;
+            display: block;
+            width: 100%;
+            padding: 14px 8px;
+            color: $white;
+            text-transform: initial;
+            -webkit-transition: all 0.25s ease;
+            -moz-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
+        }
+        nav ul li ul li a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            display: block;
+            width: 300%;
+            height: 100%;
+            background: $secondary;
+            background: linear-gradient(90deg, rgba($primary,1) 33%, rgba($secondary,1) 67%);
+            transform: translate3d(-66%,0,0);
+            -webkit-transition: all 0.75s ease;
+            -moz-transition: all 0.75s ease;
+            -o-transition: all 0.75s ease;
+            transition: all 0.75s ease;
+        }
+        nav ul li ul li a:hover:before {
+            transform: translate3d(0,0,0);
+        }
+
+
+
+/* --------------------------------------------------------------------------------------- */
+/* MOBILE ADJUSTMENTS ---------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+.responsive-menu {display: none;}
+.mobile-overlay {display: none;}
+.mobile-nav-controls {display: none;}
+
+.mobile-site header .mobile-nav,
+.scrolled-page header .mobile-nav {transform: translate3d(0,0,0);}
+.desktop-site:not(.scrolled-page) header nav {opacity: 1;}
+
+
+
+/* --------------------------------------------------------------------------------------- */
+/* Mobile Menu ---------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+/* mobile menu active ------------------------- */
+.mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba($white,0);
+    pointer-events: none;
+    -webkit-transition: background 0.25s ease;
+    -moz-transition: background 0.25s ease;
+    -o-transition: background 0.25s ease;
+    transition: background 0.25s ease;
+}
+.mobile-overlay-on {
+    background: rgba($white,0.7);
+    pointer-events: initial;
+}
+
+.responsive-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1003;
+    display: block;
+    width: 280px;
+    height: 100%;
+    background: rgba($primary,1);
+    transform: translateX(400px);
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.responsive-menu-show {transform: translateX(0) !important;}
+
+.responsive-menu:before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 43px;
+    height: 100%;
+    background: url(../images/spray-paint-edge-red.png) right top repeat-y;
+}
+
+.mobile-nav-controls {
+  position: fixed;
+  left: -25px;
+  top: 16px;
+  z-index: 1005;
+  display: block;
+}
+.close-nav, .back-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  transform: translateX(0);
+}
+.close-nav-show, .back-nav-show {transform: translateX(42px);}
+.close-nav svg, .back-nav svg {display: block; fill: $primary;}
+.close-nav:hover svg, .back-nav:hover svg {display: block; fill: $secondary;}
+
+
+/* main mobile menu list stying ------------------------- */
+.responsive-menu ul {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.responsive-menu ul li {
+  position: relative;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid $primaryhover;
+}
+.responsive-menu ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-right: 20px;
+  color: $white;
+}
+.responsive-menu ul li a:hover {text-indent: 12px; color: $secondary;}
+.responsive-menu ul#mobile-main-menu li a {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin: 0;
+  border: none;
+  background: none; 
+  font-size: 1em;
+  font-weight: 600; 
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+.responsive-menu ul#mobile-secondary-menu {background: rgba($primary,0.65);}
+.responsive-menu ul#mobile-secondary-menu li {border-bottom: 1px solid $black;}
+.responsive-menu ul#mobile-secondary-menu li a {padding-top: 8px; padding-bottom: 8px;}
+
+.responsive-menu ul li.menu-item-has-children a:before {display: none;}
+.responsive-menu ul li.menu-item-has-children a:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  width: 8px; 
+  height: 12px; 
+  background: $white;
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  transform: translate3d(0,-50%,0);
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+
+/* sub mobile menu list stying ------------------------- */
+.responsive-menu ul ul {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 260px;
+  height: 100%;
+  background: $secondary;
+  transform: translateX(400px);
+  z-index: 98;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.responsive-menu ul ul:before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 43px;
+    height: 100%;
+    background: url(../images/spray-paint-edge-navy.png) right top repeat-y;
+}
+.responsive-menu ul ul.active-submenu {transform: translateX(0) !important;}
+li.menu-item-has-children ul a:after {display: none;}
+.responsive-menu ul#mobile-main-menu ul li {border-color: $secondaryhover;}
+.responsive-menu ul#mobile-main-menu ul li a {
+  font-size: 1em;
+  letter-spacing: initial;
+}
+.responsive-menu ul#mobile-main-menu ul li a:hover {color: $light;}
+
+/* -------------------------------------------------------------- */
+/* End Mobile Menu ------------------------------- */
+/* -------------------------------------------------------------- */
+
+
+
+@media screen and (min-width: 768px) {
+
+    header .header-logo-link {margin: 0;}
+    .mobile-nav {
+        position: absolute;
+        bottom: initial;
+        top: 0;
+        width: auto;
+        height: 100%;
+        transform: translate3d(80px,0,0);
+        -webkit-transition: all 0.25s ease;
+        -moz-transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+    }
+    .mobile-nav-buttons {display: block; width: auto; height: 100%;}
+    .hamburger {display: block;}
+
+}

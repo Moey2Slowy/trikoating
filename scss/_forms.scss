@@ -1,0 +1,572 @@
+/* -------------------------------------------------------------------------------------------- */
+/* Form field HTML ---------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+#container .gfield h3 {
+    margin: 32px 0 0;
+    padding: 12px 16px;
+    background: $primary;
+    font-size: 1em;
+}
+#container .bg-white .gfield h3 {color: $white;}
+#container .bg-primary .gfield h3 {background: $secondary;}
+#container .bg-secondary .gfield h3 {background: $primary;}
+#container .bg-black .gfield h3 {background: $primary;}
+
+
+/* -------------------------------------------------------------------------------------------- */
+/* Labels ---------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+#container .gform_wrapper.gravity-theme .gfield_label {
+    margin: 0 0 8px;
+    padding: 0;
+    line-height: 1.25em;
+}
+
+
+/* -------------------------------------------------------------------------------------------- */
+/* Forms fields ---------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+#container .gform_wrapper.gravity-theme .gform_fields {
+    grid-column-gap: 1%;
+    grid-row-gap: 6px;
+}
+
+#container input[type=text],
+#container input[type=email],
+#container input[type=tel],
+#container input[type=color], 
+#container input[type=date], 
+#container input[type=datetime-local], 
+#container input[type=datetime], 
+#container input[type=month], 
+#container input[type=number], 
+#container input[type=password], 
+#container input[type=search], 
+#container input[type=time], 
+#container input[type=url], 
+#container input[type=week], 
+#container textarea,
+#container select {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 12px 16px;
+    background: rgba($white, 1);
+    border: 2px solid $black;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    color: $black;
+}
+#container .bg-primary input[type=color], 
+#container .bg-primary input[type=date], 
+#container .bg-primary input[type=datetime-local], 
+#container .bg-primary input[type=datetime], 
+#container .bg-primary input[type=email], 
+#container .bg-primary input[type=month], 
+#container .bg-primary input[type=number], 
+#container .bg-primary input[type=password], 
+#container .bg-primary input[type=search], 
+#container .bg-primary input[type=tel], 
+#container .bg-primary input[type=text], 
+#container .bg-primary input[type=time], 
+#container .bg-primary input[type=url], 
+#container .bg-primary input[type=week], 
+#container .bg-primary textarea,
+#container .bg-primary select {
+    border-color: $primary;
+}
+#container .bg-secondary input[type=color], 
+#container .bg-secondary input[type=date], 
+#container .bg-secondary input[type=datetime-local], 
+#container .bg-secondary input[type=datetime], 
+#container .bg-secondary input[type=email], 
+#container .bg-secondary input[type=month], 
+#container .bg-secondary input[type=number], 
+#container .bg-secondary input[type=password], 
+#container .bg-secondary input[type=search], 
+#container .bg-secondary input[type=tel], 
+#container .bg-secondary input[type=text], 
+#container .bg-secondary input[type=time], 
+#container .bg-secondary input[type=url], 
+#container .bg-secondary input[type=week], 
+#container .bg-secondary textarea,
+#container .bg-secondary select {
+    border-color: $secondary;
+}
+#container .bg-black input[type=color], 
+#container .bg-black input[type=date], 
+#container .bg-black input[type=datetime-local], 
+#container .bg-black input[type=datetime], 
+#container .bg-black input[type=email], 
+#container .bg-black input[type=month], 
+#container .bg-black input[type=number], 
+#container .bg-black input[type=password], 
+#container .bg-black input[type=search], 
+#container .bg-black input[type=tel], 
+#container .bg-black input[type=text], 
+#container .bg-black input[type=time], 
+#container .bg-black input[type=url], 
+#container .bg-black input[type=week], 
+#container .bg-black textarea,
+#container .bg-black select {
+    border-color: $black;
+}
+
+/* Forms fields - focus ---------------------------------------------- */
+#container input[type=text]:focus,
+#container input[type=email]:focus,
+#container input[type=tel]:focus,
+#container input[type=color]:focus, 
+#container input[type=date]:focus, 
+#container input[type=datetime-local]:focus, 
+#container input[type=datetime]:focus, 
+#container input[type=month]:focus, 
+#container input[type=number]:focus, 
+#container input[type=password]:focus, 
+#container input[type=search]:focus, 
+#container input[type=time]:focus, 
+#container input[type=url]:focus, 
+#container input[type=week]:focus, 
+#container textarea:focus,
+#container select:focus {
+    border-color: $primary;
+}
+#container .bg-primary input[type=color]:focus, 
+#container .bg-primary input[type=date]:focus, 
+#container .bg-primary input[type=datetime-local]:focus, 
+#container .bg-primary input[type=datetime]:focus, 
+#container .bg-primary input[type=email]:focus, 
+#container .bg-primary input[type=month]:focus, 
+#container .bg-primary input[type=number]:focus, 
+#container .bg-primary input[type=password]:focus, 
+#container .bg-primary input[type=search]:focus, 
+#container .bg-primary input[type=tel]:focus, 
+#container .bg-primary input[type=text]:focus, 
+#container .bg-primary input[type=time]:focus, 
+#container .bg-primary input[type=url]:focus, 
+#container .bg-primary input[type=week]:focus, 
+#container .bg-primary textarea:focus,
+#container .bg-primary select:focus {
+    border-color: $black;
+}
+#container .bg-secondary input[type=color]:focus, 
+#container .bg-secondary input[type=date]:focus, 
+#container .bg-secondary input[type=datetime-local]:focus, 
+#container .bg-secondary input[type=datetime]:focus, 
+#container .bg-secondary input[type=email]:focus, 
+#container .bg-secondary input[type=month]:focus, 
+#container .bg-secondary input[type=number]:focus, 
+#container .bg-secondary input[type=password]:focus, 
+#container .bg-secondary input[type=search]:focus, 
+#container .bg-secondary input[type=tel]:focus, 
+#container .bg-secondary input[type=text]:focus, 
+#container .bg-secondary input[type=time]:focus, 
+#container .bg-secondary input[type=url]:focus, 
+#container .bg-secondary input[type=week]:focus, 
+#container .bg-secondary textarea:focus,
+#container .bg-secondary select:focus {
+    border-color: $primary;
+}
+#container .bg-black input[type=color]:focus, 
+#container .bg-black input[type=date]:focus, 
+#container .bg-black input[type=datetime-local]:focus, 
+#container .bg-black input[type=datetime]:focus, 
+#container .bg-black input[type=email]:focus, 
+#container .bg-black input[type=month]:focus, 
+#container .bg-black input[type=number]:focus, 
+#container .bg-black input[type=password]:focus, 
+#container .bg-black input[type=search]:focus, 
+#container .bg-black input[type=tel]:focus, 
+#container .bg-black input[type=text]:focus, 
+#container .bg-black input[type=time]:focus, 
+#container .bg-black input[type=url]:focus, 
+#container .bg-black input[type=week]:focus, 
+#container .bg-black textarea:focus,
+#container .bg-black select:focus {
+    border-color: $primary;
+}
+
+::placeholder {color: $black; opacity: 1;}
+:-ms-input-placeholder {color: $black;}
+::-ms-input-placeholder {color: $black;}
+
+.bg-white ::placeholder {color: $primary; opacity: 1;}
+.bg-white :-ms-input-placeholder {color: $primary;}
+.bg-white ::-ms-input-placeholder {color: $primary;}
+
+
+
+/* -------------------------------------------------------------------------------------------- */
+/* Field Specific - Select dropdowns ---------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+#container .select-field span.wpcf7-form-control-wrap {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+#container .select-field .wpcf7-form-control-wrap:after {
+  content: '';
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  margin-top: -4px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid $black;
+  pointer-events: none;
+}
+
+
+/* -------------------------------------------------------------------------------------------- */
+/* Checkboxes and Radio buttons ---------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+#container .gform_wrapper .gfield.gfield--type-checkbox legend,
+#container .gform_wrapper .gfield.gfield--type-radio legend {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    margin: 0;
+}
+#container .bg-white .gform_wrapper .gfield.gfield--type-checkbox legend,
+#container .bg-white .gform_wrapper .gfield.gfield--type-radio legend {background: $primaryhover; color: $white;}
+#container .bg-primary .gform_wrapper .gfield.gfield--type-checkbox legend,
+#container .bg-primary .gform_wrapper .gfield.gfield--type-radio legend {background: $primaryhover;}
+#container .bg-secondary .gform_wrapper .gfield.gfield--type-checkbox legend,
+#container .bg-secondary .gform_wrapper .gfield.gfield--type-radio legend {background: $secondaryhover;}
+#container .bg-black .gform_wrapper .gfield.gfield--type-checkbox legend,
+#container .bg-black .gform_wrapper .gfield.gfield--type-radio legend {background: $primaryhover;}
+
+#container .gform_wrapper .gfield.gfield--type-checkbox .ginput_container,
+#container .gform_wrapper .gfield.gfield--type-radio .ginput_container {
+    padding: 8px;
+    background: $white;
+    border: 2px solid $primaryhover;
+    border-top: none !important;
+}
+#container .bg-primary .gform_wrapper .gfield.gfield--type-checkbox .ginput_container,
+#container .bg-primary .gform_wrapper .gfield.gfield--type-radio .ginput_container {background: $white; border-color: $primaryhover;}
+#container .bg-secondary .gform_wrapper .gfield.gfield--type-checkbox .ginput_container,
+#container .bg-secondary .gform_wrapper .gfield.gfield--type-radio .ginput_container {background: $secondary; border-color: $secondaryhover;}
+#container .bg-black .gform_wrapper .gfield.gfield--type-checkbox .ginput_container,
+#container .bg-black .gform_wrapper .gfield.gfield--type-radio .ginput_container {background: $black; border-color: $primaryhover;}
+
+#container .gform_wrapper .gfield .gfield_checkbox,
+#container .gform_wrapper .gfield .gfield_radio {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+#container .gform_wrapper .gfield.full-width-options .gfield_checkbox .gchoice,
+#container .gform_wrapper .gfield.full-width-options .gfield_radio .gchoice {display: block; width: 100%;}
+#container .gform_wrapper .gfield_checkbox .gchoice input,
+#container .gform_wrapper .gfield_checkbox .gchoice input[type=checkbox],
+#container .gform_wrapper .gfield_radio .gchoice input[type=radio] {display: none;}
+#container .gform_wrapper .gfield .gfield_checkbox .gchoice label,
+#container .gform_wrapper .gfield .gfield_radio .gchoice label {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    display: block;
+    width: auto;
+    max-width: initial;
+    padding: 12px 8px;
+    margin: 0;
+    border: 2px solid $primary;
+    border-radius: 0;
+    color: $black;
+    line-height: 1em;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all 0.125s ease;
+    -moz-transition: all 0.125s ease;
+    -o-transition: all 0.125s ease;
+    transition: all 0.125s ease;
+}
+#container .bg-primary .gform_wrapper .gfield .gfield_checkbox .gchoice label,
+#container .bg-primary .gform_wrapper .gfield .gfield_radio .gchoice label {border: 2px solid $primary; color: $black;}
+#container .bg-secondary .gform_wrapper .gfield .gfield_checkbox .gchoice label,
+#container .bg-secondary .gform_wrapper .gfield .gfield_radio .gchoice label {border: none; color: $black; color: $white;}
+#container .bg-black .gform_wrapper .gfield .gfield_checkbox .gchoice label,
+#container .bg-black .gform_wrapper .gfield .gfield_radio .gchoice label {border: 2px solid $primary; color: $white;}
+
+#container .gform_wrapper .gfield .gfield_checkbox .gchoice input[type=checkbox]:checked+label,
+#container .gform_wrapper .gfield .gfield_radio .gchoice input[type=radio]:checked+label {color: $white;}
+#container .bg-primary .gform_wrapper .gfield .gfield_checkbox .gchoice input[type=checkbox]:checked+label,
+#container .bg-primary .gform_wrapper .gfield .gfield_radio .gchoice input[type=radio]:checked+label {color: $white;}
+#container .bg-secondary .gform_wrapper .gfield .gfield_checkbox .gchoice input[type=checkbox]:checked+label,
+#container .bg-secondary .gform_wrapper .gfield .gfield_radio .gchoice input[type=radio]:checked+label {color: $white;}
+#container .bg-black .gform_wrapper .gfield .gfield_checkbox .gchoice input[type=checkbox]:checked+label,
+#container .bg-black .gform_wrapper .gfield .gfield_radio .gchoice input[type=radio]:checked+label {color: $white;}
+
+#container .gform_wrapper .gfield .gfield_checkbox .gchoice label:after,
+#container .gform_wrapper .gfield .gfield_radio .gchoice label:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 300%;
+    height: 100%;
+    background: $white;
+    background: linear-gradient(90deg, rgba($primary,1) 33%, rgba($white,1) 67%);
+    transform: translate3d(-66%,-50%,0);
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+}
+#container .gform_wrapper .gfield .gfield_checkbox .gchoice input[type=checkbox]:checked+label:after,
+#container .gform_wrapper .gfield .gfield_radio .gchoice input[type=radio]:checked+label:after {transform: translate3d(0,-50%,0);}
+#container .bg-primary .gform_wrapper .gfield .gfield_checkbox .gchoice label:after,
+#container .bg-primary .gform_wrapper .gfield .gfield_radio .gchoice label:after {background: linear-gradient(90deg, rgba($primary,1) 33%, rgba($white,1) 67%);}
+#container .bg-secondary .gform_wrapper .gfield .gfield_checkbox .gchoice label:after,
+#container .bg-secondary .gform_wrapper .gfield .gfield_radio .gchoice label:after {background: linear-gradient(90deg, rgba($primary,1) 33%, rgba($secondaryhover,1) 67%);}
+#container .bg-black .gform_wrapper .gfield .gfield_checkbox .gchoice label:after,
+#container .bg-black .gform_wrapper .gfield .gfield_radio .gchoice label:after {background: linear-gradient(90deg, rgba($primary,1) 33%, rgba($black,1) 67%);}
+
+
+/* -------------------------------------------------------------------------------------------- */
+/* Media upload ---------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+#container .gform_wrapper.gravity-theme .gform_drop_instructions {
+    font-size: 14px; 
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#container .gform_wrapper.gravity-theme .gform_drop_area button {
+    position: relative;
+    overflow: hidden;
+    padding: 12px 8px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 1em;
+    color: $white;
+}
+#container .gform_wrapper.gravity-theme .gform_drop_area button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 300%;
+    height: 100%;
+    background: $white;
+    background: linear-gradient(90deg, rgba($primary,1) 33%, rgba($grey,1) 67%);
+    transform: translate3d(-66%,-50%,0);
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+}
+#container .gform_wrapper.gravity-theme .gform_drop_area button:hover:after {transform: translate3d(0,-50%,0);}
+#container .bg-primary .gform_wrapper.gravity-theme .gform_drop_area button:after {background: linear-gradient(90deg, rgba($secondary,1) 33%, rgba($primaryhover,1) 67%);}
+#container .bg-secondary .gform_wrapper.gravity-theme .gform_drop_area button:after {background: linear-gradient(90deg, rgba($primary,1) 33%, rgba($secondaryhover,1) 67%);}
+#container .bg-black .gform_wrapper.gravity-theme .gform_drop_area button:after {background: linear-gradient(90deg, rgba($primary,1) 33%, rgba($grey,1) 67%);}
+
+
+/* -------------------------------------------------------------------------------------------- */
+/* Field notes ---------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+#container .gform_wrapper.gravity-theme .description, 
+#container .gform_wrapper.gravity-theme .gfield_description, 
+#container .gform_wrapper.gravity-theme .gsection_description, 
+#container .gform_wrapper.gravity-theme .instruction {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.25em;
+    color: $grey;
+}
+#container .bg-primary .gform_wrapper.gravity-theme .description, 
+#container .bg-primary .gform_wrapper.gravity-theme .gfield_description, 
+#container .bg-primary .gform_wrapper.gravity-theme .gsection_description, 
+#container .bg-primary .gform_wrapper.gravity-theme .instruction {color: $primaryhover;}
+#container .bg-secondary .gform_wrapper.gravity-theme .description, 
+#container .bg-secondary .gform_wrapper.gravity-theme .gfield_description, 
+#container .bg-secondary .gform_wrapper.gravity-theme .gsection_description, 
+#container .bg-secondary .gform_wrapper.gravity-theme .instruction {color: $secondaryhover;}
+#container .bg-black .gform_wrapper.gravity-theme .description, 
+#container .bg-black .gform_wrapper.gravity-theme .gfield_description, 
+#container .bg-black .gform_wrapper.gravity-theme .gsection_description, 
+#container .bg-black .gform_wrapper.gravity-theme .instruction {color: $grey;}
+
+
+/* -------------------------------------------------------------------------------------------- */
+/* Submit button ---------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+#container .gform_wrapper.gravity-theme .gform_footer {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: block;
+    margin: 20px auto 0;
+    padding: 0;
+    height: auto;
+    width: 200px;
+    text-align: center;
+    -webkit-transition: border 0.75s ease;
+    -moz-transition: border 0.75s ease;
+    -o-transition: border 0.75s ease;
+    transition: border 0.75s ease;
+}
+#container .bg-primary .gform_wrapper.gravity-theme .gform_footer {border: 2px solid $primary;}
+#container .bg-secondary .gform_wrapper.gravity-theme .gform_footer {border: 2px solid $primary;}
+#container .bg-black .gform_wrapper.gravity-theme .gform_footer {border: 2px solid $primary;}
+
+#container .bg-primary .gform_wrapper.gravity-theme .gform_footer:hover {border-color: $white;}
+#container .bg-secondary .gform_wrapper.gravity-theme .gform_footer:hover {border-color: $primary;}
+#container .bg-black .gform_wrapper.gravity-theme .gform_footer:hover {border-color: $primary;}
+
+#container .gform_wrapper.gravity-theme .gform_footer:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 300%;
+    height: 100%;
+    background: $white;
+    background: linear-gradient(90deg, rgba($black,1) 33%, rgba($primary,1) 67%);
+    transform: translate3d(-66%,-50%,0);
+    -webkit-transition: transform 0.75s ease;
+    -moz-transition: transform 0.75s ease;
+    -o-transition: transform 0.75s ease;
+    transition: transform 0.75s ease;
+}
+#container .bg-primary .gform_wrapper.gravity-theme .gform_footer:after {background: linear-gradient(90deg, rgba($primary,1) 33%, rgba($secondary,1) 67%);}
+#container .bg-secondary .gform_wrapper.gravity-theme .gform_footer:after {background: linear-gradient(90deg, rgba($secondary,1) 33%, rgba($primary,1) 67%);}
+#container .bg-black .gform_wrapper.gravity-theme .gform_footer:after {background: linear-gradient(90deg, rgba($black,1) 33%, rgba($primary,1) 67%);}
+#container .gform_wrapper.gravity-theme .gform_footer:hover:after {transform: translate3d(0,-50%,0);}
+
+#container .gform_wrapper.gravity-theme .gform_footer input {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $white;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+#container .bg-primary .gform_wrapper.gravity-theme .gform_footer input {color: $white;}
+#container .bg-secondary .gform_wrapper.gravity-theme .gform_footer input {color: $white;}
+#container .bg-black .gform_wrapper.gravity-theme .gform_footer input {color: $white;}
+
+
+/* -------------------------------------------------------------------------------------------- */
+/* Validation ---------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+#container .gform_wrapper.gravity-theme .gfield_required,
+#container .gform_wrapper.gravity-theme .gfield_required .gfield_required_custom, 
+#container .gform_wrapper.gravity-theme .gfield_required .gfield_required_text {
+  line-height: 1em;
+}
+
+#container .gform_wrapper.gravity-theme .gform_validation_errors {
+  background: $secondary;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: center;
+}
+#container .bg-primary .gform_wrapper.gravity-theme .gform_validation_errors {background: $secondary;}
+#container .bg-secondary .gform_wrapper.gravity-theme .gform_validation_errors {background: $primary;}
+#container .bg-black .gform_wrapper.gravity-theme .gform_validation_errors {background: $primary;}
+
+#container .gform_wrapper.gravity-theme .gform_validation_errors h2 {
+  font-style: normal;
+  font-weight: 600;
+  color: $white;
+}
+#container .bg-primary .gform_wrapper.gravity-theme .gform_validation_errors h2 {color: $primary;}
+#container .bg-secondary .gform_wrapper.gravity-theme .gform_validation_errors h2 {color: $white;}
+#container .bg-black .gform_wrapper.gravity-theme .gform_validation_errors h2 {color: $white;}
+
+#container .gform_wrapper.gravity-theme .gfield_description.validation_message {
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px 16px;
+  background: $secondary;
+  border: none;
+  transform: translate3d(0,-2px,0);
+  color: $white;
+  font-size: 0.6em;
+  line-height: 1.25em;
+}
+#container .bg-primary .gform_wrapper.gravity-theme .gfield_description.validation_message {width: calc(100% - 4px); background: $secondary; color: $primary;}
+#container .bg-secondary .gform_wrapper.gravity-theme .gfield_description.validation_message {width: calc(100% - 4px); background: $primary; color: $white;}
+#container .bg-black .gform_wrapper.gravity-theme .gfield_description.validation_message {width: calc(100% - 4px); background: $primary; color: $white;}
+
+
+/* -------------------------------------------------------------------------------------------- */
+/* reCaptcha ---------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+.grecaptcha-badge {visibility: hidden;}
+.recaptcha-message {
+  font-size: 0.6em;
+  line-height: 1.2em;
+  color: $primary;
+}
+.recaptcha-message a {color: $primary;}
+.recaptcha-message a:hover {color: $white;}
+.bg-white .recaptcha-message {color: $primary;}
+.bg-white .recaptcha-message a {color: $black;}
+.bg-white .recaptcha-message a:hover {color: $black;}
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------- */
+/* Media Queries ---------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 560px) {
+
+  .form-row {display: block;}
+  .form-row .form-field {width: 100%;}
+
+}
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  /* To keep from zooming into active form fields on devices */
+  select, textarea, input {
+      font-size: 16px;
+  }
+    select:focus, textarea:focus, input:focus {
+    font-size: 16px;
+  }
+}
+

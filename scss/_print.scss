@@ -1,0 +1,10 @@
+@media print {
+    nav {
+        display: none !important;
+    }
+    // a:after {
+    //     content: " (" attr(href) ")";
+    //     font-size: 11px;
+    //     text-transform: none;
+    // }
+}
