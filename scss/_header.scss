@@ -115,6 +115,7 @@ header nav {
     right: 0;
     height: 100%;
     opacity: 0;
+    pointer-events: none;
     -webkit-transition: opacity 0.25s ease;
     -moz-transition: opacity 0.25s ease;
     -o-transition: opacity 0.25s ease;
@@ -364,9 +365,12 @@ nav ul li:hover ul:before {transform: translate3d(-50%,-24px,0);}
 .mobile-overlay {display: none;}
 .mobile-nav-controls {display: none;}
 
-.mobile-site header .mobile-nav,
+.mobile-site header .mobile-nav {transform: translate3d(0,0,0);}
+.desktop-site header nav {opacity: 1; pointer-events: initial;}
+/* 
 .scrolled-page header .mobile-nav {transform: translate3d(0,0,0);}
-.desktop-site:not(.scrolled-page) header nav {opacity: 1;}
+.desktop-site:not(.scrolled-page) header nav {opacity: 0;}
+*/
 
 
 
