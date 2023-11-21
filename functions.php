@@ -138,7 +138,7 @@ if( function_exists('acf_add_options_page') ) {
 // ACF - Google Maps API
 // ----------------------------------------------------------------------------------------
 function my_acf_init() {
-    acf_update_setting('google_api_key', 'AIzaSyCwGYIChG3SbRDvzU3VGA1wDtpLIC9tDFM');
+    acf_update_setting('google_api_key', 'AIzaSyBJbCCarP3BOwoiC70F6C9xAzlvLpEEU8g');
 }
 add_action('acf/init', 'my_acf_init');
 

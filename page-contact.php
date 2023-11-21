@@ -91,7 +91,7 @@
 
 
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwGYIChG3SbRDvzU3VGA1wDtpLIC9tDFM" defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJbCCarP3BOwoiC70F6C9xAzlvLpEEU8g" defer></script>
 <script type="text/javascript">	
 (function( $ ) {	
 	/* ------------------------------------------------------------------------ */
@@ -342,9 +342,7 @@
 			type: type,
 			region: region,
 		});
-		
-		console.log(mfgs);
-		
+				
 		// Append to reference for later use.
 		map.markers.push( marker );
 
