@@ -362,7 +362,6 @@ section:not(#hero) .title-banner-content h2 {
 	height: 100%;
 	object-position: center center;
 	object-fit: cover;
-	filter: grayscale(1);
 }
 .section-feature-rows:not(.feature-start-left) .feature-row:nth-child(odd) .feature-imagery {left: 0;}
 .section-feature-rows:not(.feature-start-left) .feature-row:nth-child(even) .feature-imagery {right: 0;}
