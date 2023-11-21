@@ -9,7 +9,7 @@
 	<div id="location-map-canvas" class="acf-map" data-zoom="13">
 		<?php 
 		$type_icon = get_stylesheet_directory_uri().'/images/pin-dealer-partner.png'; 
-		$location = get_sub_field('location','option'); ?>
+		$location = get_field('location','option'); ?>
 		<div class="marker" 
 			data-type="partner" 
 			data-lat="<?php echo esc_attr($location['lat']); ?>" 
