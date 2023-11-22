@@ -2432,7 +2432,6 @@ header .header-logo-link .logo-oating path {
 
 header .header-logo-link:hover .logo-oating path {
   fill: #d7282f;
-  transform: translate3d(6px, 0, 0);
 }
 
 header .header-logo-link:hover .logo-oating path:nth-child(1) {
