@@ -40,7 +40,8 @@
 						<h4>Location</h4>
 						<p>
 							<?php the_field('address','option'); ?>, <br />
-							<?php the_field('city','option'); ?>, <?php the_field('province','option'); ?>, <?php the_field('postal','option'); ?>
+							<?php the_field('city','option'); ?>, <?php the_field('province','option'); ?>, <?php the_field('postal','option'); ?><br />
+							<a href="https://www.google.com/maps?saddr=My+Location&amp;daddr=Tri Koating Inc, Roblin Boulevard East, Winkler, MB, Canada" target="_blank">Get Directions</a>
 						</p>
 					</div>
 					<div>
