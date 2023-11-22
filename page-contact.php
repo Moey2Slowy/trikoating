@@ -102,7 +102,7 @@
 
 		// Create generic map.
 		var mapArgs = {
-			zoom        : $el.data('zoom') || 18,
+			zoom        : $el.data('zoom') || 20,
 			mapTypeId   : google.maps.MapTypeId.ROADMAP,
 			styles		: [
 				{
