@@ -102,7 +102,7 @@
 
 		// Create generic map.
 		var mapArgs = {
-			zoom        : 17,
+			zoom        : 16,
 			mapTypeId   : google.maps.MapTypeId.ROADMAP,
 			styles		: [
 				{
