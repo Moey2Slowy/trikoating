@@ -4081,7 +4081,8 @@ section:not(#hero) .title-banner-content h2 {
 }
 
 .acf-map .gm-style .gm-style-iw-c {
-  padding: 12px 0 0 16px;
+  padding: 16px 12px 12px;
+  text-align: center;
 }
 
 .acf-map .gm-style .gm-style-iw-tc::after {
