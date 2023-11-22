@@ -645,11 +645,7 @@ section:not(#hero) .title-banner-content h2 {
 	height: 65vw;
 	max-height: 512px;
 }
-.acf-map .gm-style .gm-style-iw-c {
-	padding: 0;
-	border-radius: 0;
-	box-shadow: 8px 8px 0 rgba(0,7,0,0.3);
-}
+.acf-map .gm-style .gm-style-iw-c {padding: 12px 0 0 16px;}
 .acf-map .gm-style .gm-style-iw-tc::after {display: none;}
 
 
@@ -689,7 +685,7 @@ section:not(#hero) .title-banner-content h2 {
 
 
 /* -------------------------------------------------------------------------------------------- */
-/* Thank You ---------------------------------------------- */
+/* 404 ---------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
 #page-not-found {
 	min-height: 320px;

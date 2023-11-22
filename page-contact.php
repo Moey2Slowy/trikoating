@@ -17,9 +17,7 @@
 			data-region="<?php echo esc_attr($location['state']); ?>"
 			data-img="<?php echo $type_icon; ?>"
 		>
-			<div class="marker-type marker-type-partner">Partner Dealer</div>
 			<div class="marker-main-content">
-				<h3 class="no-margin"><?php the_title(); ?></h3>
 				<p>
 					<?php echo esc_html( $location['street_number'] ); ?> <?php echo esc_html( $location['street_name'] ); ?><br />
 					<?php echo esc_html( $location['city'] ); ?>, <?php echo esc_html( $location['state'] ); ?>, <?php echo esc_html( $location['country'] ); ?><br />
