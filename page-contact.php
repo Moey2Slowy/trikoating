@@ -8,7 +8,7 @@
 <section id="location-map" class="no-padding">
 	<div id="location-map-canvas" class="acf-map" data-zoom="13">
 		<?php 
-		$type_icon = get_stylesheet_directory_uri().'/images/pin-dealer-partner.png'; 
+		$type_icon = get_stylesheet_directory_uri().'/images/map-pin.png'; 
 		$location = get_field('location','option'); ?>
 		<div class="marker" 
 			data-type="partner" 
@@ -108,33 +108,21 @@
 			mapTypeId   : google.maps.MapTypeId.ROADMAP,
 			styles		: [
 				{
-        "stylers": [
-            {
-                "hue": "#dd0d0d"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "labels",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "lightness": 100
-            },
-            {
-                "visibility": "simplified"
-            }
-        ]
-    }
+			        "stylers": [{"hue": "#dd0d0d"}]
+			    },
+			    {
+			        "featureType": "road",
+			        "elementType": "labels",
+			        "stylers": [{"visibility": "off"}]
+			    },
+			    {
+			        "featureType": "road",
+			        "elementType": "geometry",
+			        "stylers": [
+			            {"lightness": 100},
+			            {"visibility": "simplified"}
+			        ]
+			    }
 			]
 		};
 		var map = new google.maps.Map( $el[0], mapArgs );
