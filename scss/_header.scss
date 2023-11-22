@@ -67,7 +67,7 @@ header .header-logo-link .logo-oating path {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-header .header-logo-link:hover .logo-oating path {fill: $primary; transform: translate3d(6px,0,0);}
+header .header-logo-link:hover .logo-oating path {fill: $primary;}
 header .header-logo-link:hover .logo-oating path:nth-child(1) {
     -webkit-transition: all 0.25s ease;
     -moz-transition: all 0.25s ease;
