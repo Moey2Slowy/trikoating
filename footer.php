@@ -3,7 +3,7 @@
 		<footer class="scroll-section bg-secondary xsmall-text">
 			<div class="wrapper footer-wrapper center-align">
 				<a href="<?php bloginfo('url'); ?>/" class="footer-logo-link">
-					<?php get_template_part('inc/icon'); ?>
+					<?php get_template_part('inc/icon'); ?> 
 				</a>
 
 
