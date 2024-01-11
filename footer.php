@@ -21,9 +21,5 @@
 
 <?php wp_footer(); ?> <!-- Retrieves the javascript from functions file -->
 
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7173804.js"></script>
-<!-- End of HubSpot Embed Code -->
-
 </body>
 </html>
