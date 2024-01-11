@@ -437,6 +437,10 @@ nav ul li:hover ul:before {transform: translate3d(-50%,-24px,0);}
   top: 0;
   left: 0;
   display: block;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
   transform: translateX(0);
 }
 .close-nav-show, .back-nav-show {transform: translateX(42px);}

@@ -23,7 +23,7 @@
 	        a.appendChild(r);
 	    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 	</script>
-	
+
 	<title><?php wp_title() ?></title>
 	
 	<meta charset="utf-8">
@@ -62,20 +62,20 @@
 	</div>
 	
 	<div class="mobile-nav-controls">
-		<a class="close-nav">
+		<button class="close-nav">
 			<svg version="1.1" id="menu-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" width="25" height="25" preserveAspectRatio="xMidYMid meet">
 				<g>
 					<rect x="-5.7" y="20.8" transform="matrix(0.7071 0.7071 -0.7071 0.7071 24.9588 -10.36)" width="61.5" height="8.3"/>
 					<rect x="-5.7" y="20.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 60.4176 25.0783)" width="61.5" height="8.3"/>
 				</g>
 			</svg>
-		</a>
-		<a class="back-nav">
+		</button>
+		<button class="back-nav">
 			<svg version="1.1" id="menu-back" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 25" width="25" height="25" preserveAspectRatio="xMidYMid meet">
 				<g><rect x="4" y="10.5" width="21" height="4"/></g>
 				<g><polygon points="12.5,25 0,12.5 12.5,0 15.3,2.8 5.7,12.5 15.3,22.2"/></g>
 			</svg>
-		</a>
+		</button>
 	</div>
 	<div class="mobile-overlay"></div>
 
