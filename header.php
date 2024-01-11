@@ -49,7 +49,7 @@
 		?>
 	</div>
 	
-	<div class="mobile-nav-controls">
+	<div class="mobile-nav-controls" aria-label="close mobile menu">
 		<button class="close-nav">
 			<svg version="1.1" id="menu-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" width="25" height="25" preserveAspectRatio="xMidYMid meet">
 				<g>
@@ -58,7 +58,7 @@
 				</g>
 			</svg>
 		</button>
-		<button class="back-nav">
+		<button class="back-nav" aria-label="previous menu">
 			<svg version="1.1" id="menu-back" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 25" width="25" height="25" preserveAspectRatio="xMidYMid meet">
 				<g><rect x="4" y="10.5" width="21" height="4"/></g>
 				<g><polygon points="12.5,25 0,12.5 12.5,0 15.3,2.8 5.7,12.5 15.3,22.2"/></g>
