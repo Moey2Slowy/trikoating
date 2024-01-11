@@ -2,7 +2,7 @@
 
 		<footer class="scroll-section bg-secondary xsmall-text">
 			<div class="wrapper footer-wrapper center-align">
-				<a href="<?php bloginfo('url'); ?>/" class="footer-logo-link">
+				<a href="<?php bloginfo('url'); ?>/" class="footer-logo-link" aria-label="TriKoating home page">
 					<?php get_template_part('inc/icon'); ?> 
 				</a>
 

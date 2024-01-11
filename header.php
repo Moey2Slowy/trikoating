@@ -84,7 +84,7 @@
 	<div id="container">
 		<div id="header-spacer"></div>
 		<header>
-			<a href="<?php bloginfo('url'); ?>/" class="header-logo-link">
+			<a href="<?php bloginfo('url'); ?>/" class="header-logo-link" aria-label="TriKoating home page">
 				<?php get_template_part('inc/logo'); ?>
 			</a>
 
